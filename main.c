@@ -12,7 +12,10 @@ int main() {
 
   luaL_loadstring(L, "print( 'hello world -- ' .. 1.234 )"); // 'hello world -- ' ..
   lua_call(L, 0, 0);
-  
+
+  luaL_loadstring(L, "print( 'hello world -- ' .. io.read('*line') )"); // 'hello world -- ' ..
+  lua_call(L, 0, 0);
+
   lua_close(L);
   return 0;
 }
