@@ -1,3 +1,5 @@
+// gcc main.c -lm -o main && ./main # simple compilation with just GCC
+
 #define LUA_IMPL
 #include "minilua.h"
 
