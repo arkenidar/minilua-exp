@@ -1,4 +1,5 @@
 // gcc main.c -lm -o main && ./main # simple compilation with just GCC
+// tcc -run main.c # for https://repo.or.cz/tinycc.git
 
 #define LUA_IMPL
 #include "minilua.h"
